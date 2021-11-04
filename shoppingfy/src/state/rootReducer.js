@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import itemReducer from "./Item/itemReducer";
+import itemReducer from "./Item/itemsReducer";
 import listReducer from "./List/listReducer";
 import userReducer from "./User/userReducer";
 
