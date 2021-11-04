@@ -7,22 +7,25 @@ import Items from "./Items/itemsContainer";
 import AddItem from "./AddItem/AddItem";
 import Dashboard from "./Dashboard/dashboardContainer";
 
-import { MdHome, MdAssignment, MdAddBox } from "react-icons/md";
+import { MdFormatListBulleted, MdAddChart, MdReplay } from "react-icons/md";
 import ShoppingList from "./ShoppingLists/shoppinglistContainer";
 
 class MainPage extends React.Component {
   navDetails = [
     {
       link: "/items",
-      icon: <MdHome className="dashboard-icon" />,
+      icon: <MdFormatListBulleted className="icon-size icon-color" />,
+      label: "items"
     },
     {
       link: "/shoppingLists",
-      icon: <MdAssignment className="dashboard-icon" />,
+      icon: <MdAddChart className="icon-size icon-color" />,
+      label: "lists"
     },
     {
       link: "/statistics",
-      icon: <MdAddBox className="dashboard-icon" />,
+      icon: <MdReplay className="icon-size icon-color" />,
+      label: "statistics"
     },
   ];
 
