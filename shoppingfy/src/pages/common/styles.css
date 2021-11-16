@@ -16,6 +16,15 @@
 .height-99{
     height: 90%;
 }
+.height-auto{
+    height: auto;
+}
+.min-15{
+    min-height: 15vh;
+}
+.min-10{
+    min-height: 10vh;
+}
 .width_100{
     height: 100vh;
 }
@@ -24,6 +33,12 @@
 }
 .width-20{
     width:20%;
+}
+.width-100{
+    width:100%;
+}
+.width-1{
+    width:0;
 }
 .red{
     background: red;
@@ -73,6 +88,9 @@
 .three{
     flex: 3;
 }
+.four{
+    flex:4;
+}
 .h-33{
     height: 33.33vh;
 }
@@ -114,6 +132,22 @@
 .padding-top-5{
     margin-top: 5vh;
 }
+.padding-15{
+    padding: 15px;
+}
+.margin-left-1{
+    margin-left: 1px;
+}
+.margin-right-2{
+    margin-right: 2vw;
+}
+
+.margin-left-6{
+  margin-left: 6vw;
+}
+.margin-right-5{
+    margin-right: 50vw;
+}
 .icon-size{
     font-size: 25px;
 }
@@ -123,6 +157,12 @@
 .icon-white{
     color: #fff;
 }
+.width-10-px{
+    width: 10px;
+}
+.height-10-px{
+    height: 20px;
+}
 .height-5{
     height: 5vh;
 }
@@ -131,6 +171,9 @@
 }
 .height-3{
     height: 3vh;
+}
+.height-2{
+    height: 2vh;
 }
 .circle-50{
     height: 50px;
@@ -142,6 +185,9 @@
 }
 .width-3{
     width:3px;
+}
+.width-7-vw{
+    width: 12vw;
 }
 .width-60-px{
     width:60px;
@@ -163,6 +209,9 @@
 }
 .height-6-vh{
     height: 6.5vh;
+}
+.height-7-vh{
+    height: 7vh;
 }
 .amber-background{
     background: #F9A109;
@@ -209,6 +258,9 @@ color:#454545;
 .weight-700{
     font-weight: 700;
 }
+.weight-400{
+    font-weight: 500;
+}
 .top-87-vh{
     top:87vh;
 }
@@ -217,6 +269,12 @@ color:#454545;
 }
 .bottom-12-px{
     bottom:12px
+}
+.bottom-20-px{
+    bottom:20px;
+}
+.left-2-px{
+    left:2px;
 }
 .left-7-px{
     left:7px;
@@ -236,9 +294,15 @@ color:#454545;
 .margin-bottom-5{
    margin-bottom: 5vh;
 }
+.margin-bottom-10-px{
+    margin-bottom: 10px;
+}
 
 .margin-top-5{
    margin-top: 5vh;
+}
+.margin-right-5{
+    margin-right: 5vw;
 }
 .font-12{
     font-size: 12px;;
@@ -268,6 +332,13 @@ color:#454545;
 }
 .shadow{
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.04);
+}
+.rotate{
+    transform: rotate(90deg);
+}
+
+.border-left{
+    border-left: 2px solid #C1C1C4;
 }
 
 

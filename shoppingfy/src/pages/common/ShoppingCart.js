@@ -8,7 +8,7 @@ class ShoppingCart extends React.Component {
         <div className="circle-20 absolute border-rad-5 cart-background top-87-vh left-2-vw">
           <p className="relative white font-12 bottom-12-px left-7-px">1</p>
         </div>
-        <MdShoppingCart className="icon-size icon-white margin-right-5" />
+        <MdShoppingCart className="icon-size icon-white" />
       </div>
     );
   }
