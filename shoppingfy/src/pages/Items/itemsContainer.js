@@ -15,7 +15,10 @@ class Items extends React.Component {
         "Watermelon",
         "onion",
         "lettuce",
-        "garlic"
+        "garlic",
+        "tomattoe",
+        "asparagus",
+        "spinach"
       ],
     },
     {
@@ -49,28 +52,53 @@ class Items extends React.Component {
   };
 
   dynamicRender = (array) => {
-    let loop = true;
-    let loopCount = 0;
-    let arrayCopy = array;
-    let newArr = [];
+    let arrayCopy = [];
     let toReturn = [];
-    while (loop) {
-      if (arrayCopy.length > 4) {
-        newArr = array.slice(0, 4);
-        arrayCopy = array.slice(4);
-        let tempComponent = this.returnMulitple(newArr);
-        toReturn.push(tempComponent)
-      } else {
-        newArr = arrayCopy;
-        let tempComponent = this.returnMulitple(newArr);
-        toReturn.push(tempComponent)
-        loop = false;
+    let iters;
+
+    //check if length is greater than 4
+    if( array.length > 4){
+    let tmpLast = [];
+    let mod;
+
+    //get remainders after array is divided by 4
+    mod = array.length % 4;
+
+    //get number of iterations
+    iters = (array.length - mod)/4;
+    if(mod > 0){
+     //get starting point in array
+     let start = (array.length - mod);
+     tmpLast = array.slice(start)
+     arrayCopy = array.slice(0, start)
+     for( let i = 0; i < iters; i++){
+         let tmptoReturn = arrayCopy.slice(0,4);
+         let tmpComponent = this.returnMulitple(tmptoReturn);
+         toReturn.push(tmpComponent)
+        //  toReturn.push(tmptoReturn);
+         arrayCopy = arrayCopy.slice(4)
+     }
+     let tmpComponent = this.returnMulitple(tmpLast)
+     toReturn.push(tmpComponent)
+    }else{
+      arrayCopy = array;
+      for( let i = 0; i < iters ; i++){
+        let tmptoReturn = arrayCopy.slice(0,4);
+         let tmpComponent = this.returnMulitple(tmptoReturn);
+         toReturn.push(tmpComponent);
+        // toReturn.push(tmptoReturn);
+        arrayCopy = arrayCopy.slice(4)
       }
     }
-    console.log(toReturn)
-      // return toReturn.map( item => {
-      //   return item
-      // })
+    }else{
+       let tmpComponent = this.returnMulitple(array);
+       toReturn.push(tmpComponent);
+      // toReturn = array;
+    }
+ 
+    return toReturn.map( item => {
+      return item
+    })
   };
   render() {
     return (
